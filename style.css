@@ -1,0 +1,189 @@
+:root {
+  --green: #38b262;
+  --blue: #6667ab;
+
+  --red: #f0535a;
+
+  --yellow: #fff49d;
+
+  --dark-yellow: #6b5937;
+
+  --purple : #800080; 
+}
+
+body {
+  margin: 0%;
+  min-width: 100vw;
+  min-height: 100vh;
+
+  text-align: center;
+}
+
+/*yellow colour rule*/
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.yellow > .navbarContainer {
+  background-color: var(--yellow);
+}
+
+.yellow > .navbarContainer > a {
+  color: var(--dark-yellow);
+}
+
+.yellow > #headerContainer {
+  color: var(--dark-yellow);
+}
+
+.yellow > .navbarContainer > a#pageYouAreOn {
+  background-color: white;
+  color: var(--dark-yellwo);
+}
+
+/*green colour rule*/
+
+.green {
+  background-color: var(--green);
+}
+
+.green > .navbarContainer {
+  background-color: var(--green);
+}
+
+.green > .navbarContainer > a#pageYouAreOn {
+  background-color: white;
+  color: var(--green);
+}
+
+/* blue colour rule*/
+.blue {
+  background-color: var(--blue);
+}
+
+.blue > .navbarContainer {
+  background-color: var(--blue);
+}
+
+.blue > .navbarContainer > a#pageYouAreOn {
+  background-color: white;
+  color: var(--blue);
+}
+
+/*purple colour rule*/
+.purple {
+  background-color: var(--purple);
+}
+
+.purple > .navbarContainer {
+  background-color: var(--purple);
+}
+
+.purple > .navbarContainer > a#pageYouAreOn {
+  background-color: white;
+  color: var(--purple);
+}
+
+/*red colour rule*/
+
+
+
+#firstGrid.red{
+  background-color: black;
+  color: white;
+}
+
+/*navbar*/
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#navbar {
+  height: 6vh;
+
+  z-index: 1;
+
+  box-shadow: 0px 0px 7px black;
+  overflow: hidden;
+}
+
+.navbarContainer {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: stretch;
+
+  background-color: var(--red);
+
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.navbarContainer > a {
+  padding: 10px;
+  padding-right: 50px;
+
+  color: white;
+
+  text-decoration: none;
+  height: fill;
+
+  font-size: 1.5rem;
+}
+
+.navbarContainer > a:hover {
+  padding: 10px;
+  padding-right: 50px;
+
+  color: black;
+  background-color: white;
+
+  text-decoration: none;
+  height: fill;
+
+  font-size: 1.5rem;
+}
+
+.navbarContainer > a#pageYouAreOn {
+  background-color: white;
+  color: var(--red);
+}
+
+.navbarContainer > a#pageYouAreOn:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+/*header*/
+
+header {
+  height: 50vh;
+  margin-top: 0;
+  background-color: var(--red);
+}
+
+#headerContainer {
+  color: white;
+
+  padding-top: 4%;
+
+  font-size: 1.8rem;
+}
+
+/*main page*/
+
+#firstGrid {
+  padding: 2%;
+  font-size: 1.3rem;
+
+
+
+  line-height: 1.5rem;
+
+  height: 100%;
+}
