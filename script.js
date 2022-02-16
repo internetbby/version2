@@ -1,3 +1,11 @@
+let startButton = document.getElementById("start");
+
+function startExperiment(){
+  window.location.href="home.html"
+}
+
+startButton.addEventListener("click", startExperiment)
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () {
   myFunction();
