@@ -24,8 +24,6 @@ let firstGrid = document.getElementById("firstGrid");
 
 var userNumber = Math.floor(Math.random() * 5);
 
-console.log(userNumber);
-
 var userNumberString = userNumber.toString();
 
 const sessionStorageCheck = sessionStorage.getItem("userColour");
