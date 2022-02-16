@@ -71,7 +71,7 @@ var seconds = 0;
 
 function incrementSeconds() {
   seconds += 1;
-
+  console.log(seconds)
 }
 
 var cancel1 = setInterval(incrementSeconds, 1000);
