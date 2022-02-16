@@ -127,3 +127,10 @@ console.log("index " + sessionStorage.firstPageTimer)
 console.log("about " + sessionStorage.aboutTimer)
 console.log("story "+ sessionStorage.storyTimer);
 
+let button = document.getElementById("finished");
+
+function NewSite(){
+  window.location.href="done.html";
+}
+
+button.addEventListener("click", NewSite)
