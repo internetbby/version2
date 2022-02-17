@@ -89,7 +89,7 @@ if (sessionStorage.getItem("storyTimer") === null) {
 
 
 function ifOnHomePage() {
-  if (document.URL.includes("index.html")) {
+  if (document.URL.includes("home.html")) {
     var intHolder = parseInt(sessionStorage.firstPageTimer);
     intHolder += seconds;
 
