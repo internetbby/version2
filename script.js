@@ -73,8 +73,8 @@ function incrementSeconds() {
   console.log(seconds)
 }
 
-var cancel1 = setInterval(incrementSeconds, 1000);
-var update2 = setInterval(ifOnHomePage, 1000)
+var cancel = setInterval(incrementSeconds, 1000);
+var update = setInterval(ifOnHomePage, 1000)
 
 if (sessionStorage.getItem("aboutTimer") === null) {
   sessionStorage.setItem("aboutTimer", 0)
@@ -90,9 +90,9 @@ if (sessionStorage.getItem("storyTimer") === null) {
 
 function ifOnHomePage() {
   if (document.URL.includes("home.html")) {
-    var intHolder = parseInt(sessionStorage.firstPageTimer);
-    intHolder += seconds;
-
+    var intHolder = parseInt(sessionStorage.firstPageTimer); 
+    intHolder++
+ 
     sessionStorage.setItem("firstPageTimer", intHolder);
 
 
@@ -102,7 +102,7 @@ function ifOnHomePage() {
 
 
     var intHolder = parseInt(sessionStorage.aboutTimer);
-    intHolder += seconds;
+    intHolder ++
 
 
 
@@ -113,7 +113,7 @@ function ifOnHomePage() {
 
 
     var intHolder = parseInt(sessionStorage.storyTimer);
-    intHolder += seconds;
+    intHolder ++
 
 
 
