@@ -1,3 +1,12 @@
+if (document.URL.includes("done.html")){
+  console.log("index " + sessionStorage.firstPageTimer)
+
+console.log("about " + sessionStorage.aboutTimer)
+console.log("story "+ sessionStorage.storyTimer);
+
+let button = document.getElementById("finished");
+}
+
 
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () {
