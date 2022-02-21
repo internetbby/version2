@@ -1,5 +1,5 @@
 if (document.URL.includes("done.html")){
-  console.log("index " + sessionStorage.firstPageTimer)
+console.log("index " + sessionStorage.firstPageTimer)
 
 console.log("about " + sessionStorage.aboutTimer)
 console.log("story "+ sessionStorage.storyTimer);
